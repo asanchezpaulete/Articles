@@ -1,0 +1,28 @@
+{
+
+    "if": {
+    
+    "allOf": [
+    
+    {
+    
+    "field": "[concat('tags[', parameters('tagName'), ']')]",
+    
+    "exists": "false"
+    
+    }
+    
+    
+    
+    ]
+    
+    },
+    
+    "then": {
+    
+    "effect": "[parameters('effect')]"
+    
+    }
+    
+    }
+    
